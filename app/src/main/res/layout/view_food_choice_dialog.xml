@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/hex_e4ceb8">
+
+    <FrameLayout
+        android:id="@+id/fl_food"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/laksa">
+
+        <ImageView
+            android:id="@+id/iv_favor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/selector_favor" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="@mipmap/btn_closeicon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom"
+            android:background="#80ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textColor="@color/hex_393a47"
+                android:text="Curry Chicken Noodles" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/hex_393a47"
+                android:text="$15.00" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        style="@style/tag_textview"
+        android:text="Special Request"/>
+    <EditText
+        android:id="@+id/et_request"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textColor="@color/hex_393a47"
+        android:hint="Enter your request."
+        android:background="@drawable/shape_rectangle_white"/>
+
+    <TextView
+        style="@style/tag_textview"
+        android:text="Portion Size"/>
+
+    <com.tc.food2.views.MutilChoiceSpinner
+        android:id="@+id/mcs_list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="-5dp"
+        android:animateLayoutChanges="true"/>
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/bt_add_to_order"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@drawable/selector_add_to_order"
+        android:textColor="@color/hex_ffffff"
+        android:textSize="20sp"
+        android:text="Add to Order"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hex_f8511e">#F8511E</color>
+    <color name="hex_ff811e">#FF811E</color>
+    <color name="hex_ffffff">#ffffff</color>
+    <color name="hex_e4ceb8">#E4CEB8</color>
+    <color name="hex_393a47">#393A47</color>
+    <color name="transfer">#00000000</color>
+</resources>
